@@ -163,7 +163,7 @@ var work= {
    }
   ]
  };
- }
+ 
    display: function() {
      var project;
      for (project in projects.projects) {
