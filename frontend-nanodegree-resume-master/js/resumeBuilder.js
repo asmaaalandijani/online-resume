@@ -45,8 +45,10 @@ $("#footerContacts").append(formattedLocation);
 
 displayBio();
 
+bio.display = function(){};
+
 var education= {
-  "school": [
+  "schools": [
     { "name": "Effat University",
       "location": "Jeddah, SA",
       "degree": "B.S. in Computre Engineering",
@@ -74,12 +76,12 @@ function displayEducation() {
   var school;
   for (school in education.school) {
 
-    var formattedSchoolName = HTMLschoolName.replace("%data%", education.school[school].name);
-    var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.school[school].degree);
+    var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+    var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
     var formattedNameDegree = formattedSchoolName + formattedSchoolDegree;
-    var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.school[school].location);
-    var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.school[school].majors);
-    var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.school[school].dates);
+    var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+    var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+    var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 
     $("#education").append(HTMLschoolStart);
     $(".education-entry:last").append(formattedNameDegree);
@@ -105,6 +107,8 @@ function displayEducation() {
 }
 
 displayEducation();
+
+education.display = function(){};
 
 
 var work= {
@@ -146,6 +150,8 @@ function displayWork() {
 }
 
 displayWork();
+
+work.display = function(){};
 
 var projects= {
   "projects": [
@@ -191,3 +197,5 @@ function displayProjects() {
 }
 
 displayProjects();
+
+projects.display = function(){};
