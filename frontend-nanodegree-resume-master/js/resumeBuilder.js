@@ -9,9 +9,9 @@ var bio= {
   },
   "welcomeMessage": "Welcome to my Resume",
   "skills": ["beginner level of frontend development", "advanced level of UX", "advanced level of developing product strategy"],
-  "biopic": "images/biopic.png"
-
-    display: function(){
+  "biopic": "images/biopic.png",
+  
+ display: function() {
       var formattedName= HTMLheaderName.replace ("%data%", bio.name);
       var formattedRole= HTMLheaderRole.replace ("%data%", bio.role);
       var formattedMobile= HTMLmobile.replace ("%data%", bio.contacts.mobile);
@@ -45,6 +45,7 @@ var bio= {
 
 bio.display();
 
+
 var education= {
   "schools": [
     { "name": "Effat University",
@@ -67,10 +68,9 @@ var education= {
      "dates": "Feb2016-March2016",
      "url": "http://www.iclick-sa.com/"
   }
-]
+],
 
 display: function() {
-
   var school;
   for (school in education.school) {
 
@@ -127,7 +127,6 @@ var work= {
 
  display: function() {
    var job;
-
    for (job in work.jobs) {
 
      var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -148,6 +147,7 @@ var work= {
 
  work.display ();
 
+
  var projects= {
    "projects": [
      { "title": "Mockup to Article",
@@ -165,7 +165,6 @@ var work= {
  }
    display: function() {
      var project;
-
      for (project in projects.projects) {
 
        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
