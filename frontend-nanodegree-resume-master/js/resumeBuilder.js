@@ -70,7 +70,7 @@ var education= {
 ]
 };
 
-function displayEducation() {
+function education() {
   var school;
   for (school in education.school) {
 
@@ -104,8 +104,6 @@ function displayEducation() {
   }
 }
 
-displayEducation();
-
 education.display = function(){};
 
 
@@ -127,7 +125,7 @@ var work= {
  ]
 };
 
-function displayWork() {
+function work() {
   var job;
 
   for (job in work.jobs) {
@@ -147,8 +145,6 @@ function displayWork() {
   }
 }
 
-displayWork();
-
 work.display = function(){};
 
 var projects= {
@@ -167,7 +163,7 @@ var projects= {
  ]
 };
 
-function displayProjects() {
+function projects() {
   var project;
 
   for (project in projects.projects) {
@@ -193,7 +189,5 @@ function displayProjects() {
   }
 
 }
-
-displayProjects();
 
 projects.display = function(){};
