@@ -12,7 +12,7 @@ var bio= {
   "biopic": "images/biopic.png"
 };
 
-function displayBio() {
+function bio() {
 var formattedName= HTMLheaderName.replace ("%data%", bio.name);
 var formattedRole= HTMLheaderRole.replace ("%data%", bio.role);
 var formattedMobile= HTMLmobile.replace ("%data%", bio.contacts.mobile);
@@ -42,8 +42,6 @@ $("#footerContacts").append(formattedEmail);
 $("#footerContacts").append(formattedGithub);
 $("#footerContacts").append(formattedLocation);
 }
-
-displayBio();
 
 bio.display = function(){};
 
