@@ -87,9 +87,9 @@ function displayEducation() {
     $(".education-entry:last").append(formattedSchoolMajor);
     $(".education-entry:last").append(formattedSchoolDates);
   }
-
+  
+  var course;
   for (course in education.onlineCourses) {
-    var course;
 
     var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
     var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
@@ -164,9 +164,9 @@ var projects= {
 };
 
 function displayProjects() {
+  var project;
 
   for (project in projects.projects) {
-    var project;
 
     var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
