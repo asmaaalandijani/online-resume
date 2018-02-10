@@ -10,7 +10,8 @@ var bio= {
   "welcomeMessage": "Welcome to my Resume",
   "skills": ["beginner level of frontend development", "advanced level of UX", "advanced level of developing product strategy"],
   "biopic": "images/biopic.png",
-  
+};
+
  display: function() {
       var formattedName= HTMLheaderName.replace ("%data%", bio.name);
       var formattedRole= HTMLheaderRole.replace ("%data%", bio.role);
@@ -39,8 +40,7 @@ var bio= {
       $("#footerContacts").append(formattedMobile);
       $("#footerContacts").append(formattedEmail);
       $("#footerContacts").append(formattedGithub);
-      $("#footerContacts").append(formattedLocation);
-    }
+      $("#footerContacts").append(formattedLocation)
 };
 
 bio.display();
@@ -69,6 +69,7 @@ var education= {
      "url": "http://www.iclick-sa.com/"
   }
 ],
+};
 
 display: function() {
   var school;
@@ -102,7 +103,6 @@ display: function() {
     $(".education-entry:last").append(formattedOnlineDates);
     $(".education-entry:last").append(formattedOnlineUrl);
   }
-}
 };
 
 education.display();
