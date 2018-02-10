@@ -40,8 +40,8 @@ var bio= {
       $("#footerContacts").append(formattedMobile);
       $("#footerContacts").append(formattedEmail);
       $("#footerContacts").append(formattedGithub);
-      $("#footerContacts").append(formattedLocation)
-};
+      $("#footerContacts").append(formattedLocation);
+}
 
 bio.display();
 
@@ -103,7 +103,7 @@ display: function() {
     $(".education-entry:last").append(formattedOnlineDates);
     $(".education-entry:last").append(formattedOnlineUrl);
   }
-};
+}
 
 education.display();
 
@@ -124,6 +124,7 @@ var work= {
     "description": "working in maintenance department"
   }
  ]
+};
 
  display: function() {
    var job;
@@ -142,8 +143,7 @@ var work= {
      $(".work-entry:last").append(formattedDates);
      $(".work-entry:last").append(formattedDescription);
    }
- }
-};
+ };
 
  work.display ();
 
@@ -163,6 +163,7 @@ var work= {
    }
   ]
  }
+ };
    display: function() {
      var project;
      for (project in projects.projects) {
