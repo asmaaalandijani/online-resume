@@ -10,7 +10,7 @@ var bio= {
   "welcomeMessage": "Welcome to my Resume",
   "skills": ["beginner level of frontend development", "advanced level of UX", "advanced level of developing product strategy"],
   "biopic": "images/biopic.png"
-}
+};
 
 function displayBio() {
 var formattedName= HTMLheaderName.replace ("%data%", bio.name);
@@ -68,9 +68,10 @@ var education= {
      "url": "http://www.iclick-sa.com/"
   }
 ]
-}
+};
 
 function displayEducation() {
+  var school;
   for (school in education.school) {
 
     var formattedSchoolName = HTMLschoolName.replace("%data%", education.school[school].name);
@@ -88,6 +89,7 @@ function displayEducation() {
   }
 
   for (course in education.onlineCourses) {
+    var course;
 
     var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
     var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
@@ -121,9 +123,10 @@ var work= {
     "description": "working in maintenance department"
   }
  ]
-}
+};
 
 function displayWork() {
+  var job;
 
   for (job in work.jobs) {
 
@@ -158,11 +161,12 @@ var projects= {
     "images": [ "images/project2_a.png", "images/project2_b.png"]
   }
  ]
-}
+};
 
 function displayProjects() {
 
   for (project in projects.projects) {
+    var project;
 
     var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
