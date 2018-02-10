@@ -143,7 +143,7 @@ var work= {
      $(".work-entry:last").append(formattedDates);
      $(".work-entry:last").append(formattedDescription);
    }
- };
+ }
 
  work.display ();
 
@@ -162,8 +162,8 @@ var work= {
      "images": [ "images/project2_a.png", "images/project2_b.png"]
    }
   ]
- }
  };
+ }
    display: function() {
      var project;
      for (project in projects.projects) {
@@ -186,6 +186,6 @@ var work= {
          }
        }
      }
-   };
+   }
 
 projects.display ();
