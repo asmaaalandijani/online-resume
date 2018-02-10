@@ -11,7 +11,7 @@ var bio= {
   "skills": ["beginner level of frontend development", "advanced level of UX", "advanced level of developing product strategy"],
   "biopic": "images/biopic.png"
 
-    display: function() {
+    display: function(){
       var formattedName= HTMLheaderName.replace ("%data%", bio.name);
       var formattedRole= HTMLheaderRole.replace ("%data%", bio.role);
       var formattedMobile= HTMLmobile.replace ("%data%", bio.contacts.mobile);
