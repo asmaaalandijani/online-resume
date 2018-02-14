@@ -12,7 +12,6 @@ var bio= {
   "biopic": "images/biopic.png",
 };
 
-
  display: function() {
       var formattedName= HTMLheaderName.replace ("%data%", bio.name);
       var formattedRole= HTMLheaderRole.replace ("%data%", bio.role);
@@ -43,8 +42,6 @@ var bio= {
       $("#footerContacts").append(formattedGithub);
       $("#footerContacts").append(formattedLocation);
 }
-
-bio.display();
 
 
 var education= {
@@ -107,9 +104,6 @@ display: function() {
 }
 
 
-education.display();
-
-
 var work= {
   "jobs": [
     { "employer": "Emkan Education Co.",
@@ -146,8 +140,6 @@ var work= {
      $(".work-entry:last").append(formattedDescription);
    }
  }
-
- work.display ();
 
 
  var projects= {
@@ -189,5 +181,11 @@ var work= {
        }
      }
    }
+
+bio.display();
+
+education.display();
+
+work.display ();
 
 projects.display ();
