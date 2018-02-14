@@ -10,7 +10,6 @@ var bio= {
   "welcomeMessage": "Welcome to my Resume",
   "skills": ["beginner level of frontend development", "advanced level of UX", "advanced level of developing product strategy"],
   "biopic": "images/biopic.png",
-};
 
  display: function() {
       var formattedName= HTMLheaderName.replace ("%data%", bio.name);
@@ -42,6 +41,7 @@ var bio= {
       $("#footerContacts").append(formattedGithub);
       $("#footerContacts").append(formattedLocation);
 }
+  };
 
 
 var education= {
@@ -67,7 +67,6 @@ var education= {
      "url": "http://www.iclick-sa.com/"
   }
 ]
-  };
   
 display: function() {
   var school;
@@ -102,7 +101,7 @@ display: function() {
     $(".education-entry:last").append(formattedOnlineUrl);
   }
 }
-
+};
 
 var work= {
   "jobs": [
@@ -120,7 +119,6 @@ var work= {
     "description": "working in maintenance department"
   }
  ]
-};
 
  display: function() {
    var job;
@@ -140,7 +138,7 @@ var work= {
      $(".work-entry:last").append(formattedDescription);
    }
  }
-
+};
 
  var projects= {
    "projects": [
@@ -156,7 +154,6 @@ var work= {
      "images": [ "images/project2_a.png", "images/project2_b.png"]
    }
   ]
- };
  
    display: function() {
      var project;
@@ -181,6 +178,7 @@ var work= {
        }
      }
    }
+};
 
 bio.display();
 
