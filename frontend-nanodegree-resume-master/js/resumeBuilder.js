@@ -9,7 +9,8 @@ var bio= {
   },
   "welcomeMessage": "Welcome to my Resume",
   "skills": ["beginner level of frontend development", "advanced level of UX", "advanced level of developing product strategy"],
-  "biopic": "images/biopic.png";
+  "biopic": "images/biopic.png",
+};
 
 
  display: function() {
@@ -42,7 +43,7 @@ var bio= {
       $("#footerContacts").append(formattedGithub);
       $("#footerContacts").append(formattedLocation);
 }
-};
+
 bio.display();
 
 
@@ -69,6 +70,7 @@ var education= {
      "url": "http://www.iclick-sa.com/"
   }
 ]
+  };
   
 display: function() {
   var school;
@@ -103,7 +105,7 @@ display: function() {
     $(".education-entry:last").append(formattedOnlineUrl);
   }
 }
-};
+
 
 education.display();
 
