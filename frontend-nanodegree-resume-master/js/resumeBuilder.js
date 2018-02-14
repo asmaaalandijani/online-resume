@@ -68,9 +68,8 @@ var education= {
      "dates": "Feb2016-March2016",
      "url": "http://www.iclick-sa.com/"
   }
-],
-};
-
+]
+  
 display: function() {
   var school;
   for (school in education.school) {
@@ -104,6 +103,7 @@ display: function() {
     $(".education-entry:last").append(formattedOnlineUrl);
   }
 }
+};
 
 education.display();
 
