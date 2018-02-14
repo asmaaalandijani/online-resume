@@ -41,7 +41,7 @@ var bio= {
       $("#footerContacts").append(formattedEmail);
       $("#footerContacts").append(formattedGithub);
       $("#footerContacts").append(formattedLocation);
-};
+}
 
 bio.display();
 
@@ -103,7 +103,7 @@ display: function() {
     $(".education-entry:last").append(formattedOnlineDates);
     $(".education-entry:last").append(formattedOnlineUrl);
   }
-};
+}
 
 education.display();
 
@@ -143,7 +143,7 @@ var work= {
      $(".work-entry:last").append(formattedDates);
      $(".work-entry:last").append(formattedDescription);
    }
- };
+ }
 
  work.display ();
 
@@ -186,6 +186,6 @@ var work= {
          }
        }
      }
-   };
+   }
 
 projects.display ();
