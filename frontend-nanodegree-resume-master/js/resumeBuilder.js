@@ -66,7 +66,7 @@ var education= {
      "dates": "Feb2016-March2016",
      "url": "http://www.iclick-sa.com/"
   }
-]
+],
   
 display: function() {
   var school;
@@ -118,7 +118,7 @@ var work= {
     "dates": "Aug 2014 - Oct 2015",
     "description": "working in maintenance department"
   }
- ]
+ ],
 
  display: function() {
    var job;
@@ -145,15 +145,15 @@ var work= {
      { "title": "Mockup to Article",
        "dates": "Nov2017- Feb2018",
        "description": "Translating a mockup to HTML",
-       "images": [ "images/project1_a.png", "images/project1_b.png"]
+       "images": "images/project1_a.png",
    },
 
    { "title": "Animal Trading Cards",
      "dates": "Nov2017- Feb2018",
      "description": "Creating a webbased trading card",
-     "images": [ "images/project2_a.png", "images/project2_b.png"]
+     "images": "images/project2_a.png",
    }
-  ]
+  ],
  
    display: function() {
      var project;
@@ -162,20 +162,13 @@ var work= {
        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
        var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+       var formattedProjectImages = HTMLprojectDescription.replace("%data%", projects.projects[project].images);
 
        $("#projects").append(HTMLprojectStart);
        $(".project-entry:last").append(formattedProjectTitle);
        $(".project-entry:last").append(formattedProjectDates);
        $(".project-entry:last").append(formattedProjectDescription);
-
-       if (projects.projects[project].images.length>0){
-         var image;
-
-         for (image in projects.projects[project].images) {
-           var formattedProjectImages = HTMLprojectImage.replace("%data%", projects.projects[project].images[image].images);
-           $(".project-entry:last").append(formattedProjectImages);
-         }
-       }
+       $(".project-entry:last").append(formattedProjectImages);
      }
    }
 };
