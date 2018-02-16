@@ -162,7 +162,7 @@ var work= {
        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
        var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-       var formattedProjectImages = HTMLprojectDescription.replace("%data%", projects.projects[project].images);
+       var formattedProjectImages = HTMLprojectImage.replace("%data%", projects.projects[project].images);
 
        $("#projects").append(HTMLprojectStart);
        $(".project-entry:last").append(formattedProjectTitle);
